@@ -75,15 +75,15 @@ __prompt_command
 alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 scala11() {
-  sbt -batch 'set scalaVersion := "2.11.11"' console
+  sbt 'set scalaVersion := "2.11.11"' console
 }
 
 scala12() {
-  sbt -batch 'set scalaVersion := "2.12.2"' console
+  sbt 'set scalaVersion := "2.12.2"' console
 }
 
 scala13() {
-  sbt -batch 'set scalaVersion := "2.13.0"' console
+  sbt 'set scalaVersion := "2.13.0"' console
 }
 
 export AWS_ACCESS_KEY_ID=$(cat "$HOME/.aws/credentials" | head -n2 | tail -n1 | cut -d= -f2 | tr -d '[:space:]')
