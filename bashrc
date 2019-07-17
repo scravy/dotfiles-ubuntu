@@ -91,5 +91,4 @@ export AWS_SECRET_ACCESS_KEY=$(cat "$HOME/.aws/credentials" | tail -n1 | cut -d=
 
 export PATH="$PATH:$HOME/.bin:$HOME/.local/bin"
 
-
-
+source /usr/share/bash-completion/completions/git
